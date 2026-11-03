@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7ef">
+  <meta name="description" content="Explore all 32 SkillUp learning app screens in a responsive, clickable prototype.">
+  <title>SkillUp — Small steps, real growth</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js?v=1" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="SkillUp home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>skill<span>up</span></span></a>
+    <nav class="top-links" aria-label="Main navigation"><a href="#prototype">Prototype</a><a href="#screens">All screens</a><a href="https://github.com/Uzumakimayurkun11/Skillup_design" target="_blank" rel="noreferrer">Source ↗</a></nav>
+    <a class="top-cta" href="#prototype">Explore SkillUp <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <div class="eyebrow"><span class="pulse"></span> LEARN A LITTLE. GROW A LOT.</div>
+      <h1 id="page-title">Small steps.<br>Real <span>growth.</span></h1>
+      <p class="intro-copy">A learning journey designed to make progress feel possible. Browse every SkillUp screen, from your first welcome to your next big win.</p>
+      <div class="intro-actions"><a class="button button-primary" href="#prototype">Explore the experience <span aria-hidden="true">↓</span></a><a class="text-link" href="#screens">See all 32 screens ↗</a></div>
+      <div class="intro-meta"><span class="progress-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>Build real skills, one day at a time.</span></div>
+    </section>
+
+    <section class="demo-wrap" id="prototype" aria-label="Interactive SkillUp screen browser">
+      <div class="demo-window">
+        <aside class="screen-rail" aria-label="Prototype screens">
+          <div class="rail-heading"><div><span class="rail-kicker">YOUR LEARNING JOURNEY</span><h2>Explore SkillUp</h2></div><span class="screen-count" id="screenCount">24 / 32</span></div>
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="screenSearch" type="search" placeholder="Find a screen" autocomplete="off" aria-label="Find a screen"></label>
+          <div id="screenList" class="screen-list"></div>
+          <div class="rail-note"><span class="note-icon" aria-hidden="true">✦</span><p><strong>Progress over perfection</strong><br>Small daily wins add up to something big.</p></div>
+        </aside>
+
+        <div class="stage">
+          <div class="stage-toolbar"><div class="stage-label"><span class="live-dot"></span><span id="currentCategory">YOUR LEARNING</span></div><div class="stage-controls"><button id="prevScreen" class="icon-button" type="button" aria-label="Previous screen">←</button><button id="nextScreen" class="icon-button" type="button" aria-label="Next screen">→</button><button id="expandScreen" class="icon-button expand-button" type="button" aria-label="View screen full size">⤢</button></div></div>
+          <div class="device-stage"><div class="device-glow" aria-hidden="true"></div><div class="phone"><div class="phone-screen"><img id="screenImage" src="24%20%C2%B7%20Home%20%E2%80%94%20SkillUp.png" alt="SkillUp home screen"></div></div><span class="stage-caption">SKILLUP MOBILE · <span id="stageIndex">24</span></span></div>
+          <div class="screen-summary"><div><span class="summary-kicker" id="screenEyebrow">YOUR LEARNING</span><h3 id="screenTitle">Home</h3><p id="screenDescription">Your learning home brings together today's next steps.</p></div><span class="screen-badge">Learning app</span></div>
+        </div>
+
+        <aside class="detail-rail" aria-label="About SkillUp">
+          <div class="detail-top"><span class="detail-icon">✳</span><span class="detail-kicker">MADE FOR MOMENTUM</span></div>
+          <h2>Make room for your <span>next skill.</span></h2>
+          <p class="detail-copy">SkillUp turns big learning goals into clear, friendly steps that fit real life and keep you moving forward.</p>
+          <div class="detail-divider"></div>
+          <div class="detail-points"><div><span class="point-icon point-lime">✓</span><div><strong>A path that feels doable</strong><p>Short lessons help you build a steady rhythm.</p></div></div><div><span class="point-icon point-coral">✦</span><div><strong>Progress you can see</strong><p>Streaks, goals, and milestones make growth tangible.</p></div></div><div><span class="point-icon point-purple">↗</span><div><strong>Learning that fits you</strong><p>Choose courses around your interests and level.</p></div></div></div>
+          <a class="source-card" href="https://github.com/Uzumakimayurkun11/Skillup_design" target="_blank" rel="noreferrer"><span class="source-mark">GH</span><span><strong>View project source</strong><small>Explore the design screens</small></span><span class="source-arrow">↗</span></a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="screen-gallery" id="screens"><div class="section-heading"><div><span class="eyebrow small-eyebrow">THE COMPLETE JOURNEY</span><h2>From first step to next level.</h2></div><p>Choose a screen to see it in the device.</p></div><div class="gallery-grid" id="galleryGrid"></div></section>
+    <section class="closing"><span class="closing-spark">✳</span><div><span class="eyebrow small-eyebrow">SKILLUP · LEARN AT YOUR PACE</span><h2>Curious today.<br><span>Capable tomorrow.</span></h2></div><a class="button button-dark" href="#prototype">Back to prototype ↑</a></section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>skill<span>up</span></span></a><span>Designed by Chiraag Mayur</span><span>© 2026 SkillUp concept</span></footer>
+  <dialog id="screenDialog" class="screen-dialog" aria-label="Full-size screen preview"><button id="closeDialog" class="dialog-close" type="button" aria-label="Close preview">×</button><img id="dialogImage" alt=""></dialog>
+</body>
+</html>
